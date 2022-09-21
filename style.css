@@ -1,0 +1,225 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* FONT STYLE */
+
+@font-face {
+    font-family: 'Star Jedi';
+    src: url(resources/starjedi/Starjedi.ttf);
+}
+
+/* Header Section */
+
+header h1 {
+    text-align: center;
+    font-family: 'Star Jedi';
+    font-size: 2.5rem;
+}
+
+header p {
+    text-align: center;
+    font-family: 'Star Jedi';
+    font-size: 1.2rem;
+}
+
+header {
+    padding: 1rem;
+}
+
+/* Page Hero */
+
+.page-hero {
+   
+}
+
+/* Background Section */
+
+.background h2 {
+    font-family: 'Star Jedi';
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 5rem;
+}
+
+.background p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 1rem 20rem;
+}
+
+@media (max-width: 75em) {
+  .background p {
+    margin: 1rem 2rem;
+  }
+}
+
+
+
+
+/* Image Collage Section */
+
+.collage h2 {
+    text-align: center;
+    font-family: 'Star Jedi';
+    font-size: 2.5rem;
+    margin-top: 5rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0.25rem;
+}
+
+.column {
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 0.25rem;
+}
+
+.column img {
+    margin-top: 0.5rem;
+    vertical-align: middles;
+    width: 100%
+}
+
+@media (max-width: 50em) {
+    .cloumn {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 37.5em) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Highlight Section */
+
+.highlights {
+  background-color: black;
+  color: white;
+  padding: 5rem 3rem;
+  margin-top: 0.5rem
+}
+
+.highlights h2 {
+    text-align: center;
+    font-family: 'Star Jedi';
+    font-size: 2.5rem;
+}
+
+.highlights ul {
+  text-align: center
+}
+
+.highlights li {
+  font-size: 1.2rem;
+  list-style-position: inside;
+}
+
+
+/* Find More Section */
+
+.more h2 {
+  text-align: center;
+  font-family: 'Star Jedi';
+  font-size: 2.5rem;
+  margin-top: 5rem;
+}
+
+.more p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 1rem 2rem;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 2rem;
+  margin-top: 5rem;
+}
+
+footer p {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+}
